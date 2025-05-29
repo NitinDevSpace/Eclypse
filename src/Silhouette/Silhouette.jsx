@@ -16,16 +16,16 @@ const Silhouette = () => {
       <div className="silhouette">
 
         <div className="silhouette__video">
-          <video src="/media/silhoutte_vid.mp4" autoPlay loop muted></video>
+          <video src={`${process.env.PUBLIC_URL}/media/silhoutte_vid.mp4`} autoPlay loop muted></video>
         </div>
 
           <div className='right_container'>     
             <div className='top_container'>
               <p>A tailored composition in motion. Cut from structured wool with a sculpted shoulder and softened hem,
                  this piece captures presence without force. Worn here in the stillness of a city in motion.</p>
-              <img src="/media/silhoutte_1.jpg" alt="" />
-              <img src="/media/silhoutte_2.jpg" alt="" />
-              <img src="/media/silhoutte_3.jpg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/media/silhoutte_1.jpg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/media/silhoutte_2.jpg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/media/silhoutte_3.jpg`} alt="" />
             </div>
 
             <div className='middle_container'>

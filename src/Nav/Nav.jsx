@@ -9,7 +9,9 @@ const Nav = () => {
   };
   return (
     <nav className="navbar">
-     <Link to= "/"> <img src="/media/logo.png" alt="logo" className="logo" /></Link>
+     <Link to= "/Eclypse">
+        <img src={`${process.env.PUBLIC_URL}/media/logo.png`} alt="logo" className="logo" />
+      </Link>
       <ul className="nav_links">
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/contact">Waitlist</Link></li>

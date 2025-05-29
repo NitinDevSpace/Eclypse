@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='hero'>
       <h1>Eclypse</h1>
       <div className='video_box'>
-        <video className='video' src="/media/hero.mp4" autoPlay muted loop></video>
+        <video className='video' src={`${process.env.PUBLIC_URL}/media/hero.mp4`} autoPlay muted loop />
         <span className='overlay_text'>A silhouette worth remembering</span>
       </div>
       <div className='hero_text'>

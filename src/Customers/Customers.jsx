@@ -20,9 +20,9 @@ const Customers = () => {
           <div className='pointer'>Arrow</div>
 
            <div className="review-images">
-            <img  src="/media/customer_1.jpg" alt="Customer 1" />
-            <img  src="/media/customer_2.jpg" alt="Customer 2" />
-            <img  src="/media/customer_3.jpg" alt="Customer 3" />
+            <img  src={`${process.env.PUBLIC_URL}/media/customer_1.jpg`} alt="Customer 1" />
+            <img src={`${process.env.PUBLIC_URL}/media/customer_2.jpg`} alt="Customer 2" />
+            <img  src={`${process.env.PUBLIC_URL}/media/customer_3.jpg`} alt="Customer 3" />
           </div>
 
         </div>
