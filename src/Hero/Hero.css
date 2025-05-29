@@ -1,0 +1,72 @@
+.hero {
+   margin: 0 2%;
+}
+
+.hero h1 {
+    padding-top: 50px;
+    font-size: 5rem;
+}
+
+
+.hero .video_box {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 530px;
+    position: relative;
+    z-index: 0; 
+    height: 55vh;
+    width: auto;
+}
+
+.hero .video_box::after{
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.video {
+    height: 80vh;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    top: -35%;
+}
+
+.hero .video_box .overlay_text {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    color: white;
+    text-align: right;
+    z-index: 2; 
+}
+
+.hero .hero_text {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 40vw;
+    margin-top: 10vh;
+}
+
+.hero .hero_text p {
+    font-size: 2.6rem;
+}
+
+.hero a {
+    display: inline-block;
+    text-decoration: underline;
+    color: white;
+    margin-top: 4vh;
+    font-size: 1.4rem;
+    text-underline-offset: 10px;
+}

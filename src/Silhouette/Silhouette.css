@@ -1,0 +1,163 @@
+.silhouette {
+  position: relative;
+  margin: 0 3vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.heading {
+    margin: 12vh 3vh;
+    padding-top: 5vh;
+    font-size: 2.9rem;
+    display: block;
+}
+
+.silhouette__video {
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.silhouette__video video {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+.silhouette .right_container {
+    background-color:white;
+    width: 50%;
+    overflow: hidden;
+    padding: 5vh 3vh;
+    max-height: 80vh;
+}
+
+.silhouette .right_container .top_container {
+    overflow: hidden;
+    height: 37vh;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.344);
+    
+}
+
+.right_container .top_container p {
+    display: block;
+    font-size: 1rem;
+    color: black;
+    max-width: 75%;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.right_container .top_container img {
+    margin-top: 2.5vh;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    margin-right: 1vw;
+}
+
+.right_container .middle_container {
+    padding-top: 6vh;
+    overflow: hidden;
+    height: 24vh;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.344);
+}
+
+.right_container .middle_container span{
+    display: block;
+    color: black;
+}
+
+.middle_container .price_container,
+.middle_container .size_container {
+    display: flex;
+    align-items: baseline;
+}
+
+.price_container .price {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: black;
+}
+
+.price_container .mrp{
+    font-size: 0.8rem;
+    color: rgba(128, 128, 128, 0.817);
+    font-weight: 300;
+    margin-left: 0.6vw;
+    bottom: 0;
+}
+
+.size_container{
+    margin: 2rem 0;
+}
+
+.middle_container .size_container .size {
+    font-size: 1.2rem;
+    color: rgba(102, 100, 100, 0.802);
+    font-weight: 600;
+}
+
+.middle_container .size_container .chart {
+    font-weight: 300;
+    font-size: .8rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+    color: rgba(128, 128, 128, 0.817);
+}
+
+
+.middle_container .size_buttons {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.middle_container .size_buttons button {
+    font: 1em sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.344);
+    color: rgba(112, 112, 112, 0.793);
+    font-weight: 600;
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+}
+
+.bottom_container {
+    overflow: hidden;
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.bottom_container button {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.bottom_container .add_to_cart{
+    background-color: transparent;
+    max-width: 13rem;
+    border : 2px solid rgb(0, 0, 0);
+}
+
+.bottom_container .buy {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.bottom_container .buy:hover {
+    background-color: rgb(255, 3, 3);
+}

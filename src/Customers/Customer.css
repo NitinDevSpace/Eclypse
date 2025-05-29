@@ -1,0 +1,98 @@
+.customers {
+    margin: 5rem 2rem 0 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.435);
+    padding-bottom: 3rem;
+    overflow: hidden;
+    max-height: max-content;
+}
+
+.customers h3 {
+    display: block;
+    margin-top: 5rem;
+    letter-spacing: 6px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.customers .customer_content {
+    margin-top: 4rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.review-text {
+    display: flex;
+    color: #ffffff;
+    flex: 1;
+    text-align: left;
+    max-width: 90rem;
+    
+}
+
+
+.review-text .collon {
+    margin-top: -1rem;
+    margin-right: -2rem;
+    font-size: 11rem;
+}
+
+.review-text .details{
+    margin-top: 2rem;
+} 
+
+.details .review{
+    display: block;
+    max-width: 25vw;
+    font-size: 2rem;
+}
+
+.details .customer_name {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.details .customer_place {
+    margin-top: -3.5rem;
+    font-size: 1rem;
+    color: #6d6d6d;
+}
+
+.review-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 120px;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.review-images img {
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    background: #fff;
+}
+
+.review-images img:nth-child(1) {
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+    z-index: 2;
+    object-position: top;
+}
+
+.review-images img:nth-child(2),
+.review-images img:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+    z-index: 1;
+    
+}
+
+.review-images img:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}

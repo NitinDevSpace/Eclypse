@@ -1,0 +1,20 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: 2rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+
+.details_first,
+.details_second,
+.details_third {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.435);
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+}

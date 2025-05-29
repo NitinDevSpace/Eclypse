@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import Hero from './Hero';
+import Gallery from './Gallery';
+import Details from './Details';
+import Customers from './Customers';
+import Footer from './Footer';
+import Silhouette from './Silhouette';
+import { Routes, Route } from 'react-router-dom';
+import PlaceOrder from './PlaceOrder';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Nav />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Gallery />
+              <Silhouette />
+              <Details />
+              <Customers />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/place-order" element={<PlaceOrder />} />
+      </Routes>
     </div>
   );
 }
