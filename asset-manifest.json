@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Eclypse/static/css/main.9f9c2f26.css",
-    "main.js": "/Eclypse/static/js/main.d43e56b7.js",
+    "main.js": "/Eclypse/static/js/main.8a951246.js",
     "static/js/453.4f7a95f5.chunk.js": "/Eclypse/static/js/453.4f7a95f5.chunk.js",
     "index.html": "/Eclypse/index.html",
     "main.9f9c2f26.css.map": "/Eclypse/static/css/main.9f9c2f26.css.map",
-    "main.d43e56b7.js.map": "/Eclypse/static/js/main.d43e56b7.js.map",
+    "main.8a951246.js.map": "/Eclypse/static/js/main.8a951246.js.map",
     "453.4f7a95f5.chunk.js.map": "/Eclypse/static/js/453.4f7a95f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f9c2f26.css",
-    "static/js/main.d43e56b7.js"
+    "static/js/main.8a951246.js"
   ]
 }
