@@ -5,6 +5,13 @@
     margin-top: 15vh;
     width: 100%;
 }
+.gallery {
+    position: relative;
+    display: block;
+    margin: 0 2%;
+    margin-top: 15vh;
+    width: 100%;
+}
 
 .first {
     display: flex;
@@ -147,19 +154,28 @@
 .first .gallery_1 .layer h3,
 .second .gallery_2 .layer h3,
 .second .gallery_3 .layer h3{
+    padding-left: 20px;
     color: white;
     font-size: 2rem;
     text-align: left;
     z-index: 2;
-    bottom: 10%;
+    position: absolute;
+    bottom: 10px;
 }
 
 .second .gallery_4 .layer h3{
+    padding: 15%;
     color: white;
-    font-size: 5rem;
-    text-align: center;
-    align-items: center;
+    font-size: 4.5rem;
     z-index: 2;
+    vertical-align: middle;
+}
+
+.second .gallery_4 .layer h3 svg {
+    padding-top: 15px;
+    font-size: 1rem;
+    vertical-align: top;
+    transform: scale(1.2);
 }
 
 .first .gallery_1:hover .layer,
@@ -167,4 +183,71 @@
 .second .gallery_3:hover .layer,
 .second .gallery_4:hover .layer {
     opacity: 1;
+}
+.first .gallery_1:hover .layer,
+.second .gallery_2:hover .layer,
+.second .gallery_3:hover .layer,
+.second .gallery_4:hover .layer {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    margin: 0 1rem;
+    margin-top: 10vh;
+  }
+
+  .first {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+  .first .gallery_video {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+  }
+
+  .first .gallery_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .second .gallery_4,
+  .second .gallery_2,
+  .second .gallery_3 {
+    width: 100%; /* three equal squares with gap */
+    aspect-ratio: 1 / 1;             /* force square shape */
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 200px;
+  }
+
+  .second .gallery_1 img,
+  .second .gallery_2 img,
+  .second .gallery_3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .first .gallery_1 {
+    display: none;
+  }
+  .second .gallery_4:hover .layer,
+  .second .gallery_2:hover .layer,
+  .second .gallery_3:hover .layer {
+    opacity: 0;
+  }
 }

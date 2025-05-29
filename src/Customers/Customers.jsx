@@ -1,5 +1,7 @@
 import React from 'react'
 import './Customer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Customers = () => {
   return (
@@ -17,7 +19,7 @@ const Customers = () => {
             </div>
           </div>
 
-          <div className='pointer'>Arrow</div>
+          <FontAwesomeIcon icon={faCaretLeft} />
 
            <div className="review-images">
             <img  src={`${process.env.PUBLIC_URL}/media/customer_1.jpg`} alt="Customer 1" />

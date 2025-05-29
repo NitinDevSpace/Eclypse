@@ -1,10 +1,17 @@
 import React from 'react'
 import hero from './Hero.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRegistered } from '@fortawesome/free-regular-svg-icons';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = () => {
   return (
     <div className='hero'>
-      <h1>Eclypse</h1>
+      <div style={{ position: 'relative', display: 'inline-block' }}>
+        <h1>Eclypse</h1>
+        <FontAwesomeIcon icon={faRegistered} className="fa-regular" />
+      </div>
+      <span> &copy; 2025</span>
       <div className='video_box'>
         <video className='video' src={`${process.env.PUBLIC_URL}/media/hero.mp4`} autoPlay muted loop />
         <span className='overlay_text'>A silhouette worth remembering</span>
@@ -15,8 +22,8 @@ const Hero = () => {
         </p>
       </div>
 
-      <a href="/about">Learn more about Eclypse</a>
-      
+      <a href="/about">Learn more about Eclypse   <FontAwesomeIcon icon={faUpRightFromSquare} /></a>
+       
     </div>
   )
 }

@@ -4,8 +4,9 @@
   max-width: 1440px;      /* Fixed maximum width */
   margin: 0 auto;         /* Center horizontally */
   padding: 0 1rem;        /* Optional horizontal padding */
+  padding-bottom: 4rem;   /* extends background beyond footer */
   width: 100%;            /* Let it shrink on smaller screens */
   box-sizing: border-box; /* Ensure padding doesn't break layout */
   background-color: rgb(13, 13, 13);
-  font-family: 'sans-serif';
+  font-family: 'Manrope', sans-serif;
 }

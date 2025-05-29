@@ -1,5 +1,7 @@
 import React from 'react'
 import './Gallery.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRegistered } from '@fortawesome/free-regular-svg-icons';
 
 const Gallery = () => {
   return (
@@ -31,7 +33,8 @@ const Gallery = () => {
         <div className='gallery_4'>
           <img src={`${process.env.PUBLIC_URL}/media/logo.jpg`} alt="Gallery Image 4" />
           <div class="layer">
-            <h3>Eclypse</h3>
+            <h3>Eclypse <FontAwesomeIcon icon={faRegistered} className="fa-regular" /></h3>
+            
           </div>
         </div>
       </div>

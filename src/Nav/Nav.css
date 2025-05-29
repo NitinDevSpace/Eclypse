@@ -14,8 +14,8 @@
 
 .logo {
     margin: 0;
-    padding: 0;
-    width: 3vw; 
+    padding-top: 7px;
+    width: 4vw; 
     height: auto;
 }
 
@@ -65,4 +65,23 @@
     background-color: red;
     transition: background-color 0.2s ease-in-out;
     color: white;
+}
+
+@media (max-width: 768px) {
+  .nav_links a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 6vw;
+  }
+
+  .btn {
+    width: 90px;
+    height: 40px;
+  }
+
+  .btn a {
+    font-size: 1rem;
+  }
 }

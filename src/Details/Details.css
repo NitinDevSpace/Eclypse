@@ -18,3 +18,9 @@
     padding-bottom: 2rem;
     margin-right: 2rem;
 }
+
+.details_first svg,
+.details_second svg,
+.details_third svg {
+    float: right;
+}
